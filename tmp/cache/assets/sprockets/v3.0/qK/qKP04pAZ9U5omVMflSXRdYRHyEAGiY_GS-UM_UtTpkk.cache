@@ -1,0 +1,52 @@
+I"(function() {
+  var display_locale_fields;
+
+  display_locale_fields = function() {
+    var attr, fn, i, len, locale, locales, show;
+    attr = $('#attr_list a.active').data('attr');
+    locales = $('#locale').val();
+    show = $("select[name='show-only']").val();
+    $('#attr_fields .panel').hide();
+    fn = function(locale) {
+      var display, value;
+      value = $('#attr_fields .panel.' + attr + '.' + locale + ' :input').val().replace(/^\s+|\s+$/g, "");
+      if (show === 'incomplete') {
+        display = value === '';
+      } else if (show === 'complete') {
+        display = value !== '';
+      } else {
+        display = true;
+      }
+      if (display) {
+        return $('#attr_fields .panel.' + attr + '.' + locale).show();
+      }
+    };
+    for (i = 0, len = locales.length; i < len; i++) {
+      locale = locales[i];
+      fn(locale);
+    }
+    if ($('#attr_fields .panel:visible').length === 0 && show !== 'all') {
+      return $('#attr_fields .no-translations').show();
+    }
+  };
+
+  $(function() {
+    $('#attr_list a').click(function() {
+      $('#attr_list a').removeClass('active');
+      $(this).addClass('active');
+      display_locale_fields();
+      return false;
+    });
+    $('#locale, #supported_locales_, #available_locales_').select2({
+      placeholder: 'Please select a language.'
+    });
+    $('#locale').change(function() {
+      return display_locale_fields();
+    });
+    return $("select[name='show-only']").change(function() {
+      return display_locale_fields();
+    });
+  });
+
+}).call(this);
+:ET

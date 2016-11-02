@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require owl.carousel
+ *= require owl.theme
+ */
+ /*
+body {
+	background-color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    align-content: center;
+	width: 100%;
+	font: 22px Helvetica, Sans-Serif;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+
+
+}
+
+li:last-child {
+    border-right: none;
+}
+
+ a li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+	width: 20%;
+}
+
+a li:hover:not(.active) {
+    background-color: red;
+}
+
+#a {
+	color: red;
+}
+
+#b {
+	background-color: red;
+
+}
+#c {
+	background-color: #0396A6;
+}
+
+#d {
+	background-color: #F2CD03
+}
+
+
+.active {
+    background-color: white;
+}
+
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: 400px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+
+#owl-demo2 .item2{
+  margin: 3px;
+}
+#owl-demo2 .item2 img{
+  display: block;
+  width: 100%;
+  height: auto;
+
+  -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 30px;
+}
+
+
+#owl-demo3 .item{
+  margin: 3px;
+}
+#owl-demo3 .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 30px;
+}
+
+
+
+
+
+.imgWrap {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: white;
+  text-align: center;
+
+
+
+  visibility: hidden;
+  opacity: 3;
+
+  
+  -webkit-transition: visibility opacity 0.2s;
+  
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+h1 {
+
+	display: inline;
+
+	position: relative;
+
+	font: 100px Helvetica, Sans-Serif;
+
+	letter-spacing: -5px;
+
+	color: rgba(0,0,255,0.5); 
+
+}
+
+
+
+h1:after {
+
+	content: "OFTALMICOS";
+
+	position: absolute; left: 10px; top: 5px;
+
+	color: rgba(255,0,0,0.5);   
+
+}*/
